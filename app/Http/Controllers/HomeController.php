@@ -21,10 +21,10 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index($nama = '')
     {
-        $ucapan = Ucapan::all();
-        return view('invitation')->with('ucapan', $ucapan);
+        $ucapan = Ucapan::orderBy('id', 'DESC')->get();
+        return view('invitation')->with('ucapan', $ucapan)->with('penerima', $nama);
     }
 
 

@@ -17,7 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/{query?}', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->where('query', '(.*)');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->where('query', '(.*)');
 
 Route::post('put', [App\Http\Controllers\InvitationController::class, 'put'])->name('ucapan.put');
 

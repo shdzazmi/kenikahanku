@@ -2,6 +2,13 @@
 @section('title', 'Vivi & Wirdan')
 
 <link href="{{ asset('assets/css/viviwirdan.css') }}" rel="stylesheet" type="text/css"/>
+<style>
+
+    .font-utama {
+        font-family: 'Parisienne', cursive;
+    }
+
+</style>
 
 @section('content')
 
@@ -11,8 +18,8 @@
         <div class="banner-bg"></div>
         <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" class="banner-image" alt="img-banner">
         <div class="banner-title">
-            <h3 data-aos="zoom-in" data-aos-duration="1500">The Wedding Of</h3>
-            <h1 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">Vivi & Wirdan</h1>
+            <h3 data-aos="zoom-in" data-aos-duration="1500" class="font-utama">The Wedding Of</h3>
+            <h1 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400" class="font-utama">Vivi & Wirdan</h1>
             <h4 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">03.07.2021</h4>
             <div data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600" id="countdown" class="countdown">
                 <ul>
@@ -29,9 +36,9 @@
             <div class="card-body text-center">
                 <div class="row" style="text-align: center;">
                     <div class="col-md-8 offset-md-2 col-lg-8 offset-lg-2">
-                        <h5 data-aos="fade-up" data-aos-duration="1500">
+                        <h4 data-aos="fade-up" data-aos-duration="1500" class="font-utama" style="font-weight: normal">
                             Assalamu'alaikum Warahmatullahi Wabarakatuh
-                        </h5>
+                        </h4>
                         <div data-aos="fade-up" data-aos-duration="1500">
                             Barakallah wa baraka'alaika wa jama'a banaikumaa fii khair.
                             Teriring Doa dan ucap syukur kehadirat Allah SWT perkenankanlah dan ridhoilah kami
@@ -44,7 +51,7 @@
 
 
         <!--Kedua mempelai-->
-        <div class="card pt-5 pb-5 m-0" style="background-color: #f6f3f2">
+        <div class="card pt-5 pb-5 m-0" style="background-color: #f6f3f2;">
             <div class="card-body">
                 <div class="col-md-8 offset-md-2 col-lg-8 offset-lg-2">
                     <div class="row" style="text-align: center;">
@@ -52,17 +59,17 @@
                             <figure class="avatar avatar-xxl" style="height: 100px; width: 100px; margin-bottom: 10px;">
                                 <img src="https://picturepan2.github.io/spectre/img/avatar-3.png" alt="...">
                             </figure>
-                            <h3>Vivi</h3>
+                            <h1 class="font-utama" style="font-weight: normal">Vivi Liani</h1>
                             <div>Putri dari Raihan Fidan nuzband S.Hut & Siti Komala</div>
                         </div>
                         <div data-aos="zoom-in" data-aos-duration="1500" class="col-sm-4 p-3">
-                            <h1>&</h1>
+                            <h1 class="font-utama" style="font-weight: normal">&</h1>
                         </div>
                         <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-4 p-3">
                             <figure class="avatar avatar-xxl" style="height: 100px; width: 100px; margin-bottom: 10px;">
                                 <img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="...">
                             </figure>
-                            <h3>Wirdan</h3>
+                            <h1 class="font-utama" style="font-weight: normal">Wirdan A.S D.O Ali</h1>
                             <div>Putra dari Alm. Aswin S D.O Ali S.Pi., M.MA & Darmawati A Minangkabau S.P</div>
                         </div>
                     </div>
@@ -95,14 +102,14 @@
             <div class="card-body">
                 <div class="row" style="text-align: center;">
                     <div class="col-md-8 offset-md-2 col-lg-8 offset-lg-2">
-                        <h3 data-aos="fade-up" data-aos-duration="1500">Sabtu</h3>
+                        <h3 data-aos="fade-up" data-aos-duration="1500" class="font-utama" style="font-weight: normal">Sabtu</h3>
                         <div class="date-container">
                             <div>
-                                <h1 data-aos="fade-right" data-aos-duration="1500" class="datez">03</h1>
+                                <h1 data-aos="fade-right" data-aos-duration="1500" class="datez font-utama" style="font-weight: normal">03</h1>
                             </div>
                             <div style="vertical-align: middle">
-                                <h1 data-aos="fade-left" data-aos-duration="1500" class="monthz">Juli</h1>
-                                <h1 data-aos="fade-left" data-aos-duration="1500" class="monthz">2021</h1>
+                                <h1 data-aos="fade-left" data-aos-duration="1500" class="monthz font-italic">Juli</h1>
+                                <h1 data-aos="fade-left" data-aos-duration="1500" class="monthz font-italic">2021</h1>
                             </div>
                         </div>
 
@@ -117,11 +124,11 @@
                 <div class="col-md-8 offset-md-2 col-lg-8 offset-lg-2">
                     <div class="row" style="text-align: center;">
                         <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-6 p-2">
-                            <h4>Akad nikah</h4>
+                            <h2 class="font-utama" style="font-weight: normal">Akad nikah</h2>
                             <h6>08:00 wita</h6>
                         </div>
-                        <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" class="col-sm-6 p-2">
-                            <h4>Resepsi</h4>
+                        <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-6 p-2">
+                            <h2 class="font-utama" style="font-weight: normal">Resepsi</h2>
                             <h6>11:00 - 13:00 wita</h6>
                         </div>
                     </div>
@@ -131,10 +138,11 @@
 
 
         <!--Lokasi-->
-        <div class="card pt-5 m-0">
+        <div class="card pt-5 m-0" style=" z-index: 3;">
             <div class="card-body">
                 <div class="row" style="text-align: center;">
                     <div class="col-md-8 offset-md-2 col-lg-8 offset-lg-2 pb-5">
+                        <h1 data-aos="fade-up" data-aos-duration="1500" class="font-utama" style="font-weight: normal">Lokasi Acara</h1>
                         <h5 data-aos="fade-up" data-aos-duration="1500">Gedung Dakwah Al-Ishlah</h5>
                         <div data-aos="fade-up" data-aos-duration="1500">
                             Jl. A. Wahab Syahranie, Gn. Kelua, Kec. Samarinda Ulu, Kota Samarinda, Kalimantan Timur
@@ -146,6 +154,8 @@
                                 </div>
                             </div>
                         </div>
+                        <br>
+                        <a data-aos="fade-up" data-aos-duration="1500" target="_blank" href="https://maps.google.com/maps?ll=-0.469791,117.139128&z=15&t=m&hl=en&gl=US&mapclient=embed&daddr=Gedung%20Dakwah%20Al-Ishlah%20Jl.%20A.%20Wahab%20Syahranie%20Gn.%20Kelua%20Kec.%20Samarinda%20Ulu%2C%20Kota%20Samarinda%2C%20Kalimantan%20Timur%2075243@-0.4697911,117.1391283" class="btn btn-secondary" style="background-color: #b1a59e">Petunjuk arah</a>
 
                     </div>
                 </div>
@@ -157,7 +167,7 @@
             <div class="card-body">
                 <div class="row" style="text-align: center;">
                     <div class="col-md-8 offset-md-2 col-lg-8 offset-lg-2 pb-5">
-                        <h5 data-aos="fade-up" data-aos-duration="1500">Protokol Kesehatan</h5>
+                        <h2 data-aos="fade-up" data-aos-duration="1500" class="font-utama" style="font-weight: normal">Protokol Kesehatan</h2>
                         <div data-aos="fade-up" data-aos-duration="1500">
                             Dikarenakan sedang dalam masa pandemi, tanpa mengurangi rasa hormat, diharapkan seluruh tamu dapat mengikuti protokol kesehatan yang dianjurkan oleh pemerintah sebagai berikut:
                         </div>
@@ -236,11 +246,11 @@
         </div>
 
         <!--Kartu ucapan-->
-        <div class="card m-0" style="background-color: #f6f3f2;">
+        <div class="card m-0" style="background-color: #f6f3f2; z-index: 3;">
             <div class="card-body">
                 <div class="row" style="text-align: center;">
                     <div class="col-md-8 offset-md-2 col-lg-8 offset-lg-2 mt-5">
-                        <h4 data-aos="fade-up" data-aos-duration="1500">Kartu Ucapan</h4>
+                        <h2 data-aos="fade-up" data-aos-duration="1500" class="font-utama" style="font-weight: normal">Kartu Ucapan</h2>
                         <div data-aos="zoom-in" data-aos-duration="1500" class="card pb-3 m-0" style="border-radius: 16px">
                             <div class="card-body">
                                 <div class="form-group col-sm-12">
@@ -260,11 +270,11 @@
         </div>
 
         <!--Ucapan dari mereka-->
-        <div class="card pb-5 m-0" style="background-color: #f6f3f2;">
+        <div class="card pb-5 m-0" style="background-color: #f6f3f2; z-index: 3;">
             <div class="card-body">
                 <div class="row" style="text-align: center;">
                     <div class="col-md-8 offset-md-2 col-lg-8 offset-lg-2 mt-3">
-                        <h4 data-aos="fade-up" data-aos-duration="1500">Ucapan dari mereka</h4>
+                        <h2 data-aos="fade-up" data-aos-duration="1500" class="font-utama" style="font-weight: normal">Ucapan dari mereka</h2>
                         <div class="map-container p-2" data-aos="zoom-in" data-aos-duration="1500">
                             <div id="messagebox" class="message-container">
 
@@ -304,14 +314,44 @@
     </div>
 
 
+    <!--Modal opening-->
+    <div class="modal fade" id="modalbuka" style="text-align: center;" data-backdrop="static">
+
+        <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content p-5" style="background-image: url('https://i.pinimg.com/236x/81/68/77/8168774f8b714d65417e7615aac3f361.jpg'); background-size: cover">
+                    <div class="modal-body">
+                        <figure class="avatar avatar-xxl" style="height: 100px; width: 100px; margin-bottom: 10px;">
+                            <img src="https://picturepan2.github.io/spectre/img/avatar-3.png" alt="...">
+                        </figure>
+                        <p>Kepada Yth.<br>
+                        Bapak/Ibu/Saudara/i</p>
+                        <h1 class="font-utama" style="font-weight: normal; color: #1a1a1a">{{$penerima}}</h1>
+                        <p>Di tempat</p>
+                            <br>
+                        <a href="javascript:void(0)" id="openbutton" class="btn btn-secondary" style="background-color: #b1a59e">Buka Undangan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <audio id="bgm">
+        <source src="{{ asset('assets/bgm.mp3') }}" type="audio/mpeg">
+    </audio>
+
+
 @endsection
+<script>
+
+</script>
 @push('page_scripts')
 
     <script>
-
         var namainput = document.getElementById('namainput');
         var ucapaninput = document.getElementById('ucapaninput');
         var submitbutton = document.getElementById('submitbutton');
+        var bgm = document.getElementById('bgm');
+        var openbutton = document.getElementById('openbutton');
 
         submitbutton.addEventListener("click", function (){
             if(namainput.value !== '' && ucapaninput.value !== ''){

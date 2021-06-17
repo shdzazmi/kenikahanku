@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/iziToast.min.css') }}">
     <link href="{{ asset('assets/css/sweetalert.css') }}" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('assets/css/select2.min.css') }}" rel="stylesheet" type="text/css"/>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
 @yield('page_css')
 <!-- Template CSS -->
     <link rel="stylesheet" href="{{ asset('web/css/style.css') }}">
@@ -26,6 +27,8 @@
     @yield('css')
 </head>
 <body class="sidebar-gone m-0 p-0">
+
+<sakura-wrapper class="sakura-wrapper" style="height: 100vh; width: 100%; position: fixed; z-index: 2; overflow-x: hidden;"></sakura-wrapper>
 
 <div id="app">
     <div class="main-wrapper main-wrapper-1">
@@ -56,9 +59,58 @@
 @yield('scripts')
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+<link rel="stylesheet" href="{{asset('assets/dist/sakura.css')}}" />
+<script src="{{asset('assets/dist/sakura.js')}}"></script>
 <script>
-    AOS.init();
+
+    $(document).ready(function(){
+        $(this).scrollTop(0);
+    });
+
+    $(document).ready(function(){
+        $("#modalbuka").modal();
+    });
+
+    var sakura = new Sakura('sakura-wrapper', {
+        // options here
+        colors: [
+            {
+                gradientColorStart: 'rgb(217,203,203)',
+                gradientColorEnd: 'rgb(217,203,203)',
+                gradientColorDegree: 120,
+            },
+            {
+                gradientColorStart: 'rgb(217,203,203)',
+                gradientColorEnd: 'rgb(217,203,203)',
+                gradientColorDegree: 120,
+            },
+            {
+                gradientColorStart: 'rgb(217,203,203)',
+                gradientColorEnd: 'rgb(217,203,203)',
+                gradientColorDegree: 120,
+            },
+        ],
+    });
+
+    openbutton.addEventListener("click", function (){
+        $("#modalbuka").modal('hide');
+        document.getElementById("bgm").play();
+
+        setTimeout(function(){ AOS.init(); }, 500);
+        openFullscreen();
+    });
+
+    var elem = document.documentElement;
+
+    function openFullscreen() {
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.webkitRequestFullscreen) { /* Safari */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE11 */
+            elem.msRequestFullscreen();
+        }
+    }
 
     let loggedInUser =@json(\Illuminate\Support\Facades\Auth::user());
     let loginUrl = '{{ route('login') }}';
