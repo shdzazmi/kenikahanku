@@ -1,34 +1,140 @@
-<h1 align="center"><img src="https://assets.infyom.com/open-source/infyom-logo.png" alt="InfyOm"></h1>
+# 💌 Kenikahanku — Wedding Invitation Website
 
+Kenikahanku is a simple digital wedding invitation website built using HTML, Bootstrap, and PHP.
 
-## Support Us
+The goal of this project is to create a lightweight, customizable, and elegant wedding invitation website that can be deployed quickly without complex setup.
 
-We have created [14+ Laravel packages](https://github.com/InfyOmLabs) and invested a lot of resources into creating these all packages and maintaining them.
+---
 
-You can support us by either sponsoring us or buying one of our paid products. Or help us by spreading the word about us on social platforms via tweets and posts.
+## ✨ Features
 
-### Sponsors
+- 📱 Responsive Design — Mobile-friendly layout using Bootstrap
+- 💌 Digital Wedding Invitation Page
+- 📅 Event Information Section (Akad / Resepsi)
+- 📍 Google Maps Integration
+- 🖼 Photo Gallery
+- 📝 Guest Message / RSVP Form
+- 🎵 Background Music Support
+- 🎨 Simple Customizable Layout
 
-[Become a sponsor](https://opencollective.com/infyomlabs#sponsor) and get your logo on our README on Github with a link to your site.
+---
 
-<a href="https://opencollective.com/infyomlabs#sponsor"><img src="https://opencollective.com/infyomlabs/sponsors.svg?width=890"></a>
+## 🧰 Tech Stack
 
-### Backers
+- HTML5
+- CSS3
+- Bootstrap
+- JavaScript
+- PHP
 
-[Become a backer](https://opencollective.com/infyomlabs#backer) and get your image on our README on Github with a link to your site.
+---
 
-<a href="https://opencollective.com/infyomlabs#backer"><img src="https://opencollective.com/infyomlabs/backers.svg?width=890"></a>
+## 📂 Project Structure
 
-### Buy our Paid Products
+```
+kenikahanku/
+│
+├── assets/          # Images, icons, and media files
+├── css/             # Custom stylesheets
+├── js/              # JavaScript files
+├── img/             # Gallery images
+│
+├── index.php        # Main wedding invitation page
+├── rsvp.php         # Guest RSVP handler
+├── config.php       # Configuration file
+│
+└── README.md
+```
 
-[![InfyProjects](https://assets.infyom.com/open-source/infyprojects-banner.png)](https://1.envato.market/kjOGM0)
+---
 
-You can also check out our other paid products on [CodeCanyon](https://codecanyon.net/user/infyomlabs/portfolio).
+## 🚀 Getting Started
 
-### Follow Us
+### Clone the Repository
 
-- [Twitter](https://twitter.com/infyom)
-- [Facebook](https://www.facebook.com/infyom)
-- [LinkedIn](https://in.linkedin.com/company/infyom-technologies)
-- [Youtube](https://www.youtube.com/channel/UC8IvwfChD6i7Wp4yZp3tNsQ)
-- [Contact Us](https://infyom.com/contact-us)
+```
+git clone https://github.com/shdzazmi/kenikahanku.git
+```
+
+### Run the Project
+
+Move the folder into your local web server directory (XAMPP / Laragon / Apache):
+
+```
+htdocs/kenikahanku
+```
+
+Then open:
+
+```
+http://localhost/kenikahanku
+```
+
+---
+
+## ⚙️ Customization
+
+### Change Couple Name
+
+Edit inside:
+
+```
+index.php
+```
+
+Example:
+
+```html
+<h1>John & Jane</h1>
+```
+
+---
+
+### Change Event Date
+
+```html
+<p>Sunday, 25 December 2026</p>
+```
+
+---
+
+### Change Location
+
+Update Google Maps embed:
+
+```html
+<iframe src="YOUR_GOOGLE_MAPS_EMBED_LINK"></iframe>
+```
+
+---
+
+### Change Photos
+
+Replace images inside:
+
+```
+/assets/img
+```
+
+---
+
+## 🌍 Deployment
+
+You can deploy this project on:
+
+- Shared Hosting
+- VPS
+- Local Server (XAMPP / Laragon)
+
+---
+
+## 👨‍💻 Author
+
+Shahdaz Azmi
+
+GitHub:
+https://github.com/shdzazmi
+
+---
+
+💖 Made with love for a beautiful wedding moment.
