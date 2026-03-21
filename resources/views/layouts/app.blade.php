@@ -3,6 +3,9 @@
 
 <head>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <link rel="icon" type="image/png" href="{{ asset('image/logo.png') }}" />
+
     <meta charset="UTF-8">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <title>@yield('title') | {{ config('app.name') }}</title>
