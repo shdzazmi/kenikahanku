@@ -7,7 +7,11 @@
                 <img class="portraitpic m-2 d-none d-md-block" src="<?php echo e(asset('image/bini.png')); ?>"
                     alt="foto mempelai wanita">
                 <h4 class="font-utama h-md-1 h4" style="font-weight: normal">Bella Sylvia Fuji Anggraini</h4>
-                <p style="line-height: 1.3;">Putri dari Bapak Adi Sutrisno & Ibu Yosefa Imas D</p>
+                <p class="d-md-none" style="line-height: 1.3;">Putri dari <br>Bapak Adi Sutrisno <br>dan Ibu
+                    Yosefa Imas D</p>
+                <p class="d-none d-md-block" style="line-height: 1.3;">Putri dari Bapak Adi Sutrisno <br>dan Ibu Yosefa
+                    Imas D
+                </p>
                 <a class="btn btn-outline-dark btn-sm mt-2" style=""
                     href="https://www.instagram.com/bellasylviafa/" target="_blank">Instagram</a>
             </div>

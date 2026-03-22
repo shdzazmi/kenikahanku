@@ -15,3 +15,4 @@ yarn-error.log
 /.idea
 public/mix-manifest.json
 package-lock.json
+storage/framework/views/

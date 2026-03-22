@@ -12,7 +12,10 @@
                 <img class="portraitpic m-2 d-none d-md-block" src="{{ asset('image/laki.png') }}"
                     alt="foto mempelai wanita">
                 <h4 class="font-utama h-md-1 h4" style="font-weight: normal">Rifki Adam Maulana S.Kom</h4>
-                <p style="line-height: 1.3;">Putra dari Bapak Zulkifli & Ibu ArsiahD</p>
+                <p class="d-md-none" style="line-height: 1.3;">Putra dari <br>Bapak Zulkifli <br>dan Ibu
+                    Arsiah</p>
+                <p class="d-none d-md-block" style="line-height: 1.3;">Putra dari Bapak Zulkifli <br>dan Ibu Arsiah
+                </p>
                 <a class="btn btn-outline-dark btn-sm mt-2" style="" href="https://www.instagram.com/rifkiadam12/"
                     target="_blank">Instagram</a>
             </div>

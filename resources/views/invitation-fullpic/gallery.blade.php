@@ -61,8 +61,9 @@
                     <div class="col-sm-4 p-2" data-aos="fade" data-aos-duration="1500" data-aos-delay="600">
                         <a href="{{ asset('image/foto8.jpg') }}" class="glightbox" data-gallery="wedding-gallery"
                             data-type="image">
-                            <img src="{{ asset('image/foto6.jpg') }}" class="img-fluid rounded shadow-sm"
-                                alt="Gallery Image 8" style="object-fit: cover; height: 250px; width: 100%;">
+                            <img src="{{ asset('image/foto8.jpg') }}" class="img-fluid rounded shadow-sm"
+                                alt="Gallery Image 8"
+                                style="object-fit: cover; height: 250px; width: 100%; object-position: 50% 25%;">
                         </a>
                     </div>
                     <div class="col-sm-4 p-2" data-aos="fade" data-aos-duration="1500" data-aos-delay="600">

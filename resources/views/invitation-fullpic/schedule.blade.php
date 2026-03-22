@@ -48,12 +48,12 @@
                         <h4 style="font-weight: 400; vertical-align: left">08:00 wita</h4>
                     </div> --}}
                     <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-6 p-2">
-                        <h2 class="font-utama" style="font-weight: normal">Akad nikah</h2>
-                        <h6>11:00 - 12:00 wita</h6>
+                        <h2 class="font-utama shadowz" style="font-weight: normal">Akad nikah</h2>
+                        <h6 class="shadowz">11:00 - 12:00 wita</h6>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-6 p-2">
-                        <h2 class="font-utama" style="font-weight: normal">Resepsi</h2>
-                        <h6>12:00 - 15:00 wita</h6>
+                        <h2 class="font-utama shadowz" style="font-weight: normal">Resepsi</h2>
+                        <h6 class="shadowz">12:00 - 15:00 wita</h6>
                     </div>
                 </div>
             </div>
