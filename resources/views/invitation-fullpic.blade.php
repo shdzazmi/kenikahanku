@@ -64,6 +64,15 @@
         <!--Gallery-->
         @include('invitation-fullpic.gallery')
 
+        <!--Divider-->
+        <div class="divider disabled-element fly" data-aos-offset="-10" data-aos="fade-left" data-aos-duration="1500">
+            <img src="{{ asset('image/divider6.png') }}" alt="divider6"
+                style="max-height: 120px; width:auto; --x-mobile: 85%; --x-desktop: 70%;">
+        </div>
+
+        <!--Gift-->
+        @include('invitation-fullpic.gift')
+
         <!--Divider muka bela-->
         <div class="divider disabled-element" data-aos="zoom-out-right" data-aos-duration="1500">
             <img src="{{ asset('image/divider10.png') }}" class="stepin" alt="divider10"
