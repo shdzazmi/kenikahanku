@@ -3,39 +3,39 @@
 @section('content')
     <section class="section">
         <div class="section-header">
-            <h3 class="page__heading">Link Undangan Bella & Adam</h3>
+            <h4 class="page__heading">Link Undangan Bella & Adam</h4>
         </div>
         <div class="section-body">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            <a class="btn btn-primary" data-toggle="collapse" href="#tableKawal" role="button">Kawal</a>
-                            <a class="btn btn-primary" data-toggle="collapse" href="#tableStation"
-                                role="button">Station</a>
-                            <a class="btn btn-primary" data-toggle="collapse" href="#tableSD" role="button">SD</a>
-                            <a class="btn btn-primary" data-toggle="collapse" href="#tableSMP" role="button">SMP</a>
-                            <a class="btn btn-primary" data-toggle="collapse" href="#tableSMK" role="button">SMK</a>
-                            <a class="btn btn-primary" data-toggle="collapse" href="#tableKuliah" role="button">Kuliah</a>
-                            <a class="btn btn-primary" data-toggle="collapse" href="#table2m1t" role="button">2m1t</a>
-                            <a class="btn btn-primary" data-toggle="collapse" href="#tableKelelawar"
-                                role="button">Kelelawar</a>
-                            <a class="btn btn-primary" data-toggle="collapse" href="#tableMerch" role="button">Merch</a>
-                            <a class="btn btn-primary" data-toggle="collapse" href="#tableIG" role="button">IG</a>
-
-                            <table class="table mt-4">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">No</th>
-                                        <th scope="col">No HP</th>
-                                        <th scope="col">Nama</th>
-                                        <th scope="col">Copy Isi teks</th>
-                                        <th scope="col">Link WA</th>
-                                    </tr>
-                                </thead>
-                            </table>
+                            <div class="row mb-4">
+                                <a class="btn btn-primary" data-toggle="collapse" href="#tableKawal" role="button">Kawal</a>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#tableStation"
+                                    role="button">Station</a>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#tableSD" role="button">SD</a>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#tableSMP" role="button">SMP</a>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#tableSMK" role="button">SMK</a>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#tableKuliah"
+                                    role="button">Kuliah</a>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#table2m1t" role="button">2m1t</a>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#tableKelelawar"
+                                    role="button">Kelelawar</a>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#tableMerch"
+                                    role="button">Merch</a>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#tableIG" role="button">IG</a>
+                            </div>
                             <div class="collapse" id="tableKawal">
-                                <table class="table">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Nama</th>
+                                            <th scope="col">Copy teks</th>
+                                            <th scope="col">Link</th>
+                                        </tr>
+                                    </thead>
                                     <tbody>
 
                                         @php
@@ -44,7 +44,6 @@
 
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282189998564</td>
                                             <td>Rifki dan Kesendiriannya</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Rifki dan Kesendiriannya')"><i
@@ -58,11 +57,18 @@
                             </div>
 
                             <div class="collapse" id="tableStation">
-                                <table class="table">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Nama</th>
+                                            <th scope="col">Copy teks</th>
+                                            <th scope="col">Link</th>
+                                        </tr>
+                                    </thead>
                                     <tbody>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282251088774</td>
                                             <td>Rifani dan Erna</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Rifani dan Erna')"><i
@@ -73,7 +79,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282138039435</td>
                                             <td>Risky Dan Calon Istri</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Risky Dan Calon Istri')"><i
@@ -86,11 +91,18 @@
                                 </table>
                             </div>
                             <div class="collapse" id="tableSD">
-                                <table class="table">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Nama</th>
+                                            <th scope="col">Copy teks</th>
+                                            <th scope="col">Link</th>
+                                        </tr>
+                                    </thead>
                                     <tbody>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6283832225531</td>
                                             <td>Vivi dan Suami</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Vivi dan Suami')"><i
@@ -101,7 +113,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282154181897</td>
                                             <td>Seima dan Suami</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Seima dan Suami')"><i
@@ -112,7 +123,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6281649462805</td>
                                             <td>Dillah dan Gita</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Dillah dan Gita')"><i
@@ -123,7 +133,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6281254445992</td>
                                             <td>Galang dan Ading</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Galang dan Ading')"><i
@@ -134,7 +143,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6285752036176</td>
                                             <td>Rahmi dan Patner</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Rahmi dan Patner')"><i
@@ -147,11 +155,18 @@
                                 </table>
                             </div>
                             <div class="collapse" id="tableSMP">
-                                <table class="table">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Nama</th>
+                                            <th scope="col">Copy teks</th>
+                                            <th scope="col">Link</th>
+                                        </tr>
+                                    </thead>
                                     <tbody>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282154728477</td>
                                             <td>Ardi dan Istri </td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Ardi dan Istri ')"><i
@@ -162,7 +177,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>628118454040</td>
                                             <td>Gilang dan Calon istri</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Gilang dan Calon istri')"><i
@@ -173,7 +187,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6281327619687</td>
                                             <td>Bahrul dan Jodoh</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Bahrul dan Jodoh')"><i
@@ -184,7 +197,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282354995373</td>
                                             <td>Dody dan Calon Istri</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Dody dan Calon Istri')"><i
@@ -195,7 +207,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282243128430</td>
                                             <td>Kaisar dan Odi</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Kaisar dan Odi')"><i
@@ -206,7 +217,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6281522642609</td>
                                             <td>Raihan dan Nia</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Raihan dan Nia')"><i
@@ -217,7 +227,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282152333928</td>
                                             <td>Epi dan Para Wanitanya</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Epi dan Para Wanitanya')"><i
@@ -228,7 +237,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6281256699724</td>
                                             <td>Primus dan Sherly</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Primus dan Sherly')"><i
@@ -239,7 +247,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6285751981309</td>
                                             <td>Ladut dan Istri</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Ladut dan Istri')"><i
@@ -250,7 +257,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6281254486367</td>
                                             <td>Rizky dan Istri</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Rizky dan Istri')"><i
@@ -261,7 +267,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282153925992</td>
                                             <td>Windy dan Patner</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Windy dan Patner')"><i
@@ -272,7 +277,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6285249949705</td>
                                             <td>Bagus dan Istri</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Bagus dan Istri')"><i
@@ -283,7 +287,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6285717593617</td>
                                             <td>Adit Jambul dan El</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Adit Jambul dan El')"><i
@@ -294,7 +297,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6281346340805</td>
                                             <td>Dian dan Istri</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Dian dan Istri')"><i
@@ -305,7 +307,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6285349192149</td>
                                             <td>Edo dan Patner</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Edo dan Patner')"><i
@@ -316,7 +317,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282155209427</td>
                                             <td>Sulis dan Istri</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Sulis dan Istri')"><i
@@ -327,7 +327,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282251470621</td>
                                             <td>Imam dan Istri</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Imam dan Istri')"><i
@@ -340,11 +339,18 @@
                                 </table>
                             </div>
                             <div class="collapse" id="tableSMK">
-                                <table class="table">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Nama</th>
+                                            <th scope="col">Copy teks</th>
+                                            <th scope="col">Link</th>
+                                        </tr>
+                                    </thead>
                                     <tbody>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6285248168889</td>
                                             <td>Dimas dan Calon Istrinya</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Dimas dan Calon Istrinya')"><i
@@ -355,7 +361,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282261215750</td>
                                             <td>Arroza dan ……</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Arroza dan ……')"><i
@@ -366,7 +371,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282138338589</td>
                                             <td>Bambang dan Istri</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Bambang dan Istri')"><i
@@ -377,7 +381,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6281395004445</td>
                                             <td>Fikri dan Istri</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Fikri dan Istri')"><i
@@ -388,7 +391,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6285325394992</td>
                                             <td>Guntur dan Sherly</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Guntur dan Sherly')"><i
@@ -399,7 +401,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6285250250940</td>
                                             <td>Okta dan Calon Suami</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Okta dan Calon Suami')"><i
@@ -410,7 +411,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282254002831</td>
                                             <td>Devi dan Reza</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Devi dan Reza')"><i
@@ -421,7 +421,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6285247293339</td>
                                             <td>Yunita dan Calon Suami</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Yunita dan Calon Suami')"><i
@@ -434,11 +433,18 @@
                                 </table>
                             </div>
                             <div class="collapse" id="tableKuliah">
-                                <table class="table">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Nama</th>
+                                            <th scope="col">Copy teks</th>
+                                            <th scope="col">Link</th>
+                                        </tr>
+                                    </thead>
                                     <tbody>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6285346897319</td>
                                             <td>Willyardo dan Calon Istri</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Willyardo dan Calon Istri')"><i
@@ -449,7 +455,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282210947539</td>
                                             <td>Nando dan Istri</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Nando dan Istri')"><i
@@ -460,7 +465,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6281313608040</td>
                                             <td>Herman dan Calon Istri</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Herman dan Calon Istri')"><i
@@ -471,7 +475,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6283854016832</td>
                                             <td>Dina dan Calon Suami</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Dina dan Calon Suami')"><i
@@ -482,7 +485,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6281346234657</td>
                                             <td>Iqbal dan Juju</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Iqbal dan Juju')"><i
@@ -493,7 +495,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282149881752</td>
                                             <td>Katon dan Istri</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Katon dan Istri')"><i
@@ -504,7 +505,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282213091502</td>
                                             <td>Rahmat dan Wanitanya</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Rahmat dan Wanitanya')"><i
@@ -515,7 +515,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6285388278713</td>
                                             <td>Oliv dan Rhe</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Oliv dan Rhe')"><i
@@ -526,7 +525,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282114753945</td>
                                             <td>Nurvita dan Calon Suami</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Nurvita dan Calon Suami')"><i
@@ -537,7 +535,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6285173238297</td>
                                             <td>Reza dan Semua wanitanya</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Reza dan Semua wanitanya')"><i
@@ -548,7 +545,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6285161019979</td>
                                             <td>Vegi dan Idol KPOP</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Vegi dan Idol KPOP')"><i
@@ -561,11 +557,18 @@
                                 </table>
                             </div>
                             <div class="collapse" id="table2m1t">
-                                <table class="table">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Nama</th>
+                                            <th scope="col">Copy teks</th>
+                                            <th scope="col">Link</th>
+                                        </tr>
+                                    </thead>
                                     <tbody>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282256273191</td>
                                             <td>Ali dan Patner</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Ali dan Patner')"><i
@@ -576,7 +579,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282150289321</td>
                                             <td>Andi dan Ayu</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Andi dan Ayu')"><i
@@ -587,7 +589,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6285158220203</td>
                                             <td>Angga Dan Cindy</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Angga Dan Cindy')"><i
@@ -598,7 +599,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6281351832687</td>
                                             <td>Iqbal dan Dhea</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Iqbal dan Dhea')"><i
@@ -609,7 +609,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282150013423</td>
                                             <td>Dede dan Hmmmm</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Dede dan Hmmmm')"><i
@@ -622,11 +621,18 @@
                                 </table>
                             </div>
                             <div class="collapse" id="tableKelelawar">
-                                <table class="table">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Nama</th>
+                                            <th scope="col">Copy teks</th>
+                                            <th scope="col">Link</th>
+                                        </tr>
+                                    </thead>
                                     <tbody>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6289637180724</td>
                                             <td>Sultan dan Kesendirian</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Sultan dan Kesendirian')"><i
@@ -637,7 +643,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6285705988336</td>
                                             <td>Melan dan Konsersamarinda</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Melan dan Konsersamarinda')"><i
@@ -648,7 +653,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6281244274934</td>
                                             <td>Belen dan Kejombloannya</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Belen dan Kejombloannya')"><i
@@ -659,7 +663,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6285246566410</td>
                                             <td>Acajelos dan Tukang Beli </td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Acajelos dan Tukang Beli ')"><i
@@ -672,11 +675,18 @@
                                 </table>
                             </div>
                             <div class="collapse" id="tableMerch">
-                                <table class="table">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Nama</th>
+                                            <th scope="col">Copy teks</th>
+                                            <th scope="col">Link</th>
+                                        </tr>
+                                    </thead>
                                     <tbody>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282156401799</td>
                                             <td>Jamal dan Semua Wanitanya</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Jamal dan Semua Wanitanya')"><i
@@ -687,7 +697,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6282225555236</td>
                                             <td>Bare dan Calon Istri</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Bare dan Calon Istri')"><i
@@ -698,7 +707,6 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
-                                            <td>6285753567389</td>
                                             <td>Rian dan Jodoh</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'Rian dan Jodoh')"><i
@@ -711,22 +719,43 @@
                                 </table>
                             </div>
                             <div class="collapse" id="tableIG">
-                                <table class="table">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Nama</th>
+                                            <th scope="col">Copy teks</th>
+                                            <th scope="col">Link</th>
+                                        </tr>
+                                    </thead>
                                     <tbody>
                                         <tr>
                                             <th scope="row">{{ $no++ }}</th>
                                             <td>adz_ichzn</td>
-                                            <td>adz_ichzn</td>
                                             <td><button class="btn btn-primary btn-sm"
                                                     onclick="copyUndangan(this, 'adz_ichzn')"><i
                                                         class="fas fa-clipboard"></i></button></td>
-                                            <td><a class="btn btn-success btn-sm" href="https://ig.me/m/adz_ichzn/"><i
+                                            <td><a class="btn btn-danger btn-sm" href="https://ig.me/m/adz_ichzn/"><i
                                                         class="fab fa-instagram"></i></a></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
 
+                        </div>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-header">
+                            <h4>Cara Menggunakan</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Untuk <b class="text-success">Whatsapp</b>: Klik Icon <i class="fab fa-whatsapp"></i> untuk
+                                kirim
+                                ke WA penerima</p>
+                            <p>Untuk <b class="text-danger">Instagram</b>: Klik Icon <i class="far fa-clipboard"></i>
+                                untuk copy
+                                teks undangan, lalu klik
+                                icon <i class="fab fa-instagram"></i> untuk buka DM IG penerima</p>
                         </div>
                     </div>
                 </div>
