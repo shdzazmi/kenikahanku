@@ -3,9 +3,9 @@
         <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
     </ul>
 </form>
-<ul class="navbar-nav navbar-right">
+{{-- <ul class="navbar-nav navbar-right">
 
-    @if(\Illuminate\Support\Facades\Auth::user())
+    @if (\Illuminate\Support\Facades\Auth::user())
         <li class="dropdown">
             <a href="#" data-toggle="dropdown"
                class="nav-link dropdown-toggle nav-link-lg nav-link-user">
@@ -34,8 +34,8 @@
     @else
         <li class="dropdown"><a href="#" data-toggle="dropdown"
                                 class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                {{--                <img alt="image" src="#" class="rounded-circle mr-1">--}}
-                <div class="d-sm-none d-lg-inline-block">{{ __('messages.common.hello') }}</div>
+                {{--                <img alt="image" src="#" class="rounded-circle mr-1"> --}}
+{{-- <div class="d-sm-none d-lg-inline-block">{{ __('messages.common.hello') }}</div>
             </a>
             <div class="dropdown-menu dropdown-menu-right">
                 <div class="dropdown-title">{{ __('messages.common.login') }}
@@ -50,4 +50,4 @@
             </div>
         </li>
     @endif
-</ul>
+</ul> --}}

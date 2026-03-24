@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/link', function () {
+    return view('link');
+})->name('link');
+
 Route::get('/{query?}', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->where('query', '(.*)');
 
 Route::post('put', [App\Http\Controllers\InvitationController::class, 'put'])->name('ucapan.put');
