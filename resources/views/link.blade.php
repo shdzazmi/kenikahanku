@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Link Undangan')
 
 @section('content')
     <section class="section">
@@ -8,23 +9,53 @@
         <div class="section-body">
             <div class="row">
                 <div class="col-lg-12">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h4>Cara Menggunakan</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Untuk <b class="text-success">Whatsapp</b>: Klik Icon <i class="fab fa-whatsapp text-success"></i> untuk kirim ke WA penerima, <i>Nomor WA penerima wajib sudah di tambahkan ke kontak</i></p>
+                            <p>Untuk <b class="text-danger">Instagram</b>: Klik Icon <i class="far fa-clipboard"></i>
+                                untuk copy
+                                teks undangan, lalu klik
+                                icon <i class="fab fa-instagram text-danger"></i> untuk buka DM IG penerima, <i>IG private harus sudah saling follow back</i></p>
+                        </div>
+                    </div>
                     <div class="card">
                         <div class="card-body">
-                            <div class="row mb-4">
-                                <a class="btn btn-primary" data-toggle="collapse" href="#tableKawal" role="button">Kawal</a>
-                                <a class="btn btn-primary" data-toggle="collapse" href="#tableStation"
-                                    role="button">Station</a>
-                                <a class="btn btn-primary" data-toggle="collapse" href="#tableSD" role="button">SD</a>
-                                <a class="btn btn-primary" data-toggle="collapse" href="#tableSMP" role="button">SMP</a>
-                                <a class="btn btn-primary" data-toggle="collapse" href="#tableSMK" role="button">SMK</a>
-                                <a class="btn btn-primary" data-toggle="collapse" href="#tableKuliah"
-                                    role="button">Kuliah</a>
-                                <a class="btn btn-primary" data-toggle="collapse" href="#table2m1t" role="button">2m1t</a>
-                                <a class="btn btn-primary" data-toggle="collapse" href="#tableKelelawar"
-                                    role="button">Kelelawar</a>
-                                <a class="btn btn-primary" data-toggle="collapse" href="#tableMerch"
-                                    role="button">Merch</a>
-                                <a class="btn btn-primary" data-toggle="collapse" href="#tableIG" role="button">IG</a>
+                            <div class="row">
+                                <div class="col-lg-12 mb-4">
+                                    <h5>Adam</h5>
+                                    <a class="btn btn-primary" data-toggle="collapse" href="#tableKawal"
+                                        role="button">Kawal</a>
+                                    <a class="btn btn-primary" data-toggle="collapse" href="#tableStation"
+                                        role="button">Station</a>
+                                    <a class="btn btn-primary" data-toggle="collapse" href="#tableSD" role="button">SD</a>
+                                    <a class="btn btn-primary" data-toggle="collapse" href="#tableSMP"
+                                        role="button">SMP</a>
+                                    <a class="btn btn-primary" data-toggle="collapse" href="#tableSMK"
+                                        role="button">SMK</a>
+                                    <a class="btn btn-primary" data-toggle="collapse" href="#tableKuliah"
+                                        role="button">Kuliah</a>
+                                    <a class="btn btn-primary" data-toggle="collapse" href="#table2m1t"
+                                        role="button">2m1t</a>
+                                    <a class="btn btn-primary" data-toggle="collapse" href="#tableKelelawar"
+                                        role="button">Kelelawar</a>
+                                    <a class="btn btn-primary" data-toggle="collapse" href="#tableMerch"
+                                        role="button">Merch</a>
+                                    <a class="btn btn-primary" data-toggle="collapse" href="#tableIG" role="button">IG</a>
+                                </div>
+                                <div class="col-lg-12 mb-4">
+                                    <h5>Bella</h5>
+                                    <a class="btn btn-primary" data-toggle="collapse" href="#tableBotanic"
+                                        role="button">Botanic</a>
+                                    <a class="btn btn-primary" data-toggle="collapse" href="#tableTheHotel"
+                                        role="button">The Hotel</a>
+                                    <a class="btn btn-primary" data-toggle="collapse" href="#tableSMPSMK"
+                                        role="button">SMP SMK</a>
+                                    <a class="btn btn-primary" data-toggle="collapse" href="#tableIGBella"
+                                        role="button">IG</a>
+                                </div>
                             </div>
                             <div class="collapse" id="tableKawal">
                                 <table class="table table-sm">
@@ -741,23 +772,119 @@
                                     </tbody>
                                 </table>
                             </div>
+                            <div class="collapse" id="tableBotanic">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Nama</th>
+                                            <th scope="col">Copy teks</th>
+                                            <th scope="col">Link</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>ibu aulia & suami</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'ibu aulia & suami')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('085250691096','ibu aulia & suami')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>elisa</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'elisa')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('083899616633','elisa')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>sandra</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'sandra')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('085821708806','sandra')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>tary</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'tary')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('088245302984','tary')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>dijah</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'dijah')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('082149631266','dijah')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>dela</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'dela')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('083127360033','dela')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>feni & suami</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'feni & suami')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('089689473109','feni & suami')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>nisaa & calon suami</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'nisaa & calon suami')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('085751869908','nisaa & calon suami')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>cicak & calon suami</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'cicak & calon suami')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('081522579841','cicak & calon suami')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>ava</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'ava')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('087888561434','ava')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>kak everly</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'kak everly')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('089507714154','kak everly')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>jenna & calon suami</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'jenna & calon suami')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('085849033708','jenna & calon suami')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>tiara & calon suami</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'tiara & calon suami')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('082250936616','tiara & calon suami')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>widia</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'widia')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('089688726069','widia')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>melin</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'melin')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('083153879551','melin')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>cindy & calon suami</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'cindy & calon suami')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('085752524293‬','cindy & calon suami')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>ocha</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'ocha')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('087715716223','ocha')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>kak ibrahim & istri tercinta</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'kak ibrahim & istri tercinta')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('082125167915‬','kak ibrahim & istri tercinta')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="collapse" id="tableTheHotel">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Nama</th>
+                                            <th scope="col">Copy teks</th>
+                                            <th scope="col">Link</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>hotel</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'hotel')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('the','hotel')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>om ijay & istri</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'om ijay & istri')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('0895704159616','om ijay & istri')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>patrick & suami</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'patrick & suami')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('081213083355','patrick & suami')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>duta persahabatan smd</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'duta persahabatan smd')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('085246058104','duta persahabatan smd')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>sari & keluarga</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'sari & keluarga')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('082155206935','sari & keluarga')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>utari & suami</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'utari & suami')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('081363252828','utari & suami')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>gusti & ipeh</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'gusti & ipeh')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('082153715067','gusti & ipeh')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>sukma & suami</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'sukma & suami')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('085822547376','sukma & suami')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>anak gw & calon suami</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'anak gw & calon suami')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('082154331524','anak gw & calon suami')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>putwi</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'putwi')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('083844725064','putwi')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>bocil</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'bocil')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('081349859767','bocil')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>fina</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'fina')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('0895322235282','fina')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>zela</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'zela')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('081346313430','zela')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>chessa</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'chessa')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('082254571034','chessa')"><i class="fab fa-whatsapp"></i></button></td></tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="collapse" id="tableSMPSMK">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Nama</th>
+                                            <th scope="col">Copy teks</th>
+                                            <th scope="col">Link</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>tika & suami</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'tika & suami')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('081346144589','tika & suami')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>mia & suami</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'mia & suami')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('082214323508','mia & suami')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>pera & suami</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'pera & suami')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('082254400080','pera & suami')"><i class="fab fa-whatsapp"></i></button></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>theresa & calon suami</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'theresa & calon suami')"><i class="fas fa-clipboard"></i></button></td><td><button class="btn btn-success btn-sm" onclick="openWA('085251111069','theresa & calon suami')"><i class="fab fa-whatsapp"></i></button></td></tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="collapse" id="tableIGBella">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Nama</th>
+                                            <th scope="col">Copy teks</th>
+                                            <th scope="col">Link</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>sinta</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'sinta')"><i class="fas fa-clipboard"></i></button></td><td><a class="btn btn-danger btn-sm" href="https://ig.me/m/cioanocia/" target="_blank"><i class="fab fa-instagram"></i></a></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>mila & suami</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'mila & suami')"><i class="fas fa-clipboard"></i></button></td><td><a class="btn btn-danger btn-sm" href="https://ig.me/m/mlawr2/" target="_blank"><i class="fab fa-instagram"></i></a></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>indy & suami</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'indy & suami')"><i class="fas fa-clipboard"></i></button></td><td><a class="btn btn-danger btn-sm" href="https://ig.me/m/indybgg/" target="_blank"><i class="fab fa-instagram"></i></a></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>ira & calon suami</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'ira & calon suami')"><i class="fas fa-clipboard"></i></button></td><td><a class="btn btn-danger btn-sm" href="https://ig.me/m/irastizhra/" target="_blank"><i class="fab fa-instagram"></i></a></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>nadin</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'nadin')"><i class="fas fa-clipboard"></i></button></td><td><a class="btn btn-danger btn-sm" href="https://ig.me/m/nchndrwnta/" target="_blank"><i class="fab fa-instagram"></i></a></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>maul</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'maul')"><i class="fas fa-clipboard"></i></button></td><td><a class="btn btn-danger btn-sm" href="https://ig.me/m/littlesun_asteroids/" target="_blank"><i class="fab fa-instagram"></i></a></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>fathur & istri</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'fathur & istri')"><i class="fas fa-clipboard"></i></button></td><td><a class="btn btn-danger btn-sm" href="https://ig.me/m/fathuraman_/" target="_blank"><i class="fab fa-instagram"></i></a></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>mira & suami</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'mira & suami')"><i class="fas fa-clipboard"></i></button></td><td><a class="btn btn-danger btn-sm" href="https://ig.me/m/mirara_11/" target="_blank"><i class="fab fa-instagram"></i></a></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>desi & suami</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'desi & suami')"><i class="fas fa-clipboard"></i></button></td><td><a class="btn btn-danger btn-sm" href="https://ig.me/m/ichhy_/" target="_blank"><i class="fab fa-instagram"></i></a></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>ainun</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'ainun')"><i class="fas fa-clipboard"></i></button></td><td><a class="btn btn-danger btn-sm" href="https://ig.me/m/jaryah_ainun/" target="_blank"><i class="fab fa-instagram"></i></a></td></tr>
+                                        <tr><th scope="row">{{ $no++ }}</th><td>kak friska dan suami</td><td><button class="btn btn-primary btn-sm" onclick="copyUndangan(this, 'kak friska dan suami')"><i class="fas fa-clipboard"></i></button></td><td><a class="btn btn-danger btn-sm" href="https://ig.me/m/friskawardhani_/" target="_blank"><i class="fab fa-instagram"></i></a></td></tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
 
                         </div>
                     </div>
-                    <div class="card mt-4">
-                        <div class="card-header">
-                            <h4>Cara Menggunakan</h4>
-                        </div>
-                        <div class="card-body">
-                            <p>Untuk <b class="text-success">Whatsapp</b>: Klik Icon <i class="fab fa-whatsapp"></i> untuk
-                                kirim
-                                ke WA penerima</p>
-                            <p>Untuk <b class="text-danger">Instagram</b>: Klik Icon <i class="far fa-clipboard"></i>
-                                untuk copy
-                                teks undangan, lalu klik
-                                icon <i class="fab fa-instagram"></i> untuk buka DM IG penerima</p>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
